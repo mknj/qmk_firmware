@@ -4,7 +4,7 @@ all:
 	sleep 3
 	mount  /media/
 	cp qmk_firmware/markus_default.uf2 /media/
-	umount /media/
+	umount /media/	
 old:
 	ln -s -f ../../markus qmk/keyboards/
 	make -C qmk markus:default
