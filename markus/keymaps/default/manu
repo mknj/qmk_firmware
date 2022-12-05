@@ -1,0 +1,30 @@
+#include QMK_KEYBOARD_H
+
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+// DEL RETURN RIGHT F7 F1 F3 F5 DOWN
+// 3 W A 4 Z S E LSHIFT
+// 5 R D 6 C F T X
+// 7 Y G 8 B H U V
+// 9 I J 0 M K O N
+// PLUS P L MINUS DOT COLON AT COMMA
+// POUND STAR SEMICOLON RSHIFT EQUAL UP SLASH
+// 1 LEFT CTRL 2 SPACE COMMODORE Q STOP
+
+// send shifted keys https://github.com/qmk/qmk_firmware/issues/6175
+// tab dance https://github.com/samhocevar-forks/qmk-firmware/blob/master/docs/feature_tap_dance.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
+// #define MATRIX_HAS_GHOST
+// https://github.com/qmk/qmk_firmware/blob/develop/docs/platformdev_rp2040.md
+// https://golem.hu/article/pro-micro-pinout/
+// https://www.dg1sfj.de/index.php/elektronik/selbstbau/38-c64-und-sx64-keyboard-matrix
+
+[0] = {
+  { KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_MINS},
+  { KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT},
+  { KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_BSLS},
+  { KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,               KC_Z,    KC_U,    KC_I,    KC_O,    KC_P,    KC_4},
+
+
+}
+};
